@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Number Validator | Stockholm IT Academi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="validator-card">
+            <div class="logo">
+                <img src="logo.png" alt="Stockholm IT Academi Logo" width="160" height="auto">
+            </div>
+            
+            <h1>Personal Number Validator</h1>
+            <div class="input-group">
+                <input type="text" 
+                       id="personnummer" 
+                       placeholder="YYYYMMDD-XXXX"
+                       aria-label="Enter personal number"
+                       maxlength="13">
+                <button id="validateBtn">Validate</button>
+            </div>
+            <div id="result" class="result"></div>
+            
+            <div id="details" class="details hidden">
+                <div class="info-grid">
+                    <div class="info-item">
+                        <label>Date of Birth</label>
+                        <span id="birthDate"></span>
+                    </div>
+                    <div class="info-item">
+                        <label>Age</label>
+                        <span id="age"></span>
+                    </div>
+                    <div class="info-item">
+                        <label>Gender</label>
+                        <span id="gender"></span>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="company-info">
+                    <p></p>
+                    <p class="company-name">SITA.dev</p>
+                    <p>Org.nr: 559337-9141</p>
+                    <p>Stockholm, Sweden</p>
+                    <p><a href="tel:+46859900277">+46(0)859900277</a></p>
+                </div>
+                <div class="copyright">© 2025 Stockholm IT Academi AB</div>
+            </footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
